@@ -1,0 +1,2 @@
+clients:
+  user-analyzer: ${ANALYZER-API:}
