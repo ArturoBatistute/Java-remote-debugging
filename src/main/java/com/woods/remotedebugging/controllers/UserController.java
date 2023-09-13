@@ -1,6 +1,5 @@
 package com.woods.remotedebugging.controllers;
 
-import com.woods.remotedebugging.entities.UserRecord;
 import com.woods.remotedebugging.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -17,8 +16,8 @@ public class UserController {
     private UserService userService;
 
     @PostMapping
-    private ResponseEntity<String> analyze(UserRecord user){
+    private ResponseEntity<String> analyze(){
 
-        return ResponseEntity.ok(userService.analyzeInformation(user));
+        return ResponseEntity.ok(userService.analyzeInformation());
     }
 }
